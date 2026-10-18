@@ -8,7 +8,7 @@ Colección de skills para Claude Code (y otros agentes compatibles con `.agents/
 .agents/skills/<skill>/        fuente única de cada skill (SKILL.md + scripts/ + references/ …)
 .claude/skills/<skill>  ->     symlinks a .agents/skills para que Claude Code las cargue en este repo
 .claude-plugin/marketplace.json   define los plugins instalables
-.claude/agents/<agente>.md     (vacío por ahora) subagentes de Claude Code
+.claude/agents/<agente>.md     subagentes de Claude Code (uno por plugin)
 LICENSES/                      licencias de los proyectos de origen
 ```
 
@@ -31,6 +31,15 @@ En cualquier proyecto, desde Claude Code:
 ```
 
 Dentro de este repo las skills de `.claude/skills/` se cargan solas.
+
+## Agentes
+
+| Agente | Plugin | Skills precargadas | Cuándo lo usa Claude |
+|---|---|---|---|
+| `taste-designer` | `design` | `design-taste-frontend`, `redesign-existing-projects` (las de estilo las lee solo si se piden) | Crear, rediseñar o revisar webs públicas |
+| `instagram-strategist` | `instagram` | las 13 `ig-*` | Cualquier tarea de contenido o crecimiento en Instagram |
+
+Claude los elige solo según la tarea, o puedes pedirlo explícitamente: "usa el agente instagram-strategist para planificar mi semana". Las skills listadas en `skills:` se cargan enteras en el contexto del agente al arrancar.
 
 ## Skills
 

@@ -20,6 +20,9 @@
         "./.agents/skills/industrial-brutalist-ui",
         "./.agents/skills/gpt-taste",
         "./.agents/skills/full-output-enforcement"
+      ],
+      "agents": [
+        "./.claude/agents/taste-designer.md"
       ]
     },
     {
@@ -54,6 +57,9 @@
         "./.agents/skills/ig-repurpose",
         "./.agents/skills/ig-story",
         "./.agents/skills/ig-viral"
+      ],
+      "agents": [
+        "./.claude/agents/instagram-strategist.md"
       ]
     }
   ]
