@@ -1,0 +1,60 @@
+{
+  "name": "skills-claude",
+  "owner": {
+    "name": "ecolomaroca"
+  },
+  "metadata": {
+    "description": "Skills de diseño frontend e Instagram para Claude Code"
+  },
+  "plugins": [
+    {
+      "name": "design",
+      "description": "Dirección de arte frontend, rediseño y estilos visuales (basado en taste-skill)",
+      "source": "./",
+      "strict": false,
+      "skills": [
+        "./.agents/skills/design-taste-frontend",
+        "./.agents/skills/redesign-existing-projects",
+        "./.agents/skills/high-end-visual-design",
+        "./.agents/skills/minimalist-ui",
+        "./.agents/skills/industrial-brutalist-ui",
+        "./.agents/skills/gpt-taste",
+        "./.agents/skills/full-output-enforcement"
+      ]
+    },
+    {
+      "name": "design-imagegen",
+      "description": "Skills que generan imágenes de referencia (requieren una herramienta de generación de imágenes) o están escritas para Codex / Google Stitch",
+      "source": "./",
+      "strict": false,
+      "skills": [
+        "./.agents/skills/brandkit",
+        "./.agents/skills/image-to-code",
+        "./.agents/skills/imagegen-frontend-web",
+        "./.agents/skills/imagegen-frontend-mobile",
+        "./.agents/skills/stitch-design-taste"
+      ]
+    },
+    {
+      "name": "instagram",
+      "description": "Reels, carruseles, captions, stories, DMs, comentarios y planificación para Instagram",
+      "source": "./",
+      "strict": false,
+      "skills": [
+        "./.agents/skills/ig-audit",
+        "./.agents/skills/ig-caption",
+        "./.agents/skills/ig-carousel",
+        "./.agents/skills/ig-comment",
+        "./.agents/skills/ig-dm",
+        "./.agents/skills/ig-human",
+        "./.agents/skills/ig-plan",
+        "./.agents/skills/ig-profile",
+        "./.agents/skills/ig-reel",
+        "./.agents/skills/ig-reply",
+        "./.agents/skills/ig-repurpose",
+        "./.agents/skills/ig-story",
+        "./.agents/skills/ig-viral"
+      ]
+    }
+  ]
+}

@@ -12,13 +12,15 @@ description: >-
 
 # ig-viral
 
+Script and data paths below are relative to this skill's folder (the directory containing this SKILL.md). Resolve them against that folder, not the current working directory.
+
 The research skill. Everything else in this pack writes; this one goes and
 looks. Run it monthly, not daily. Formulas last a season.
 
 One tool lives in this folder and it runs:
 
 ```bash
-python3 swipe.py captured.tsv --out ~/.claude/instagram/swipe.md
+python3 scripts/swipe.py captured.tsv --out ~/.claude/instagram/swipe.md
 ```
 
 ## The one idea that makes this worth doing
@@ -112,11 +114,11 @@ account	followers	median	views	hook
 ```
 
 ```bash
-python3 swipe.py captured.tsv --out ~/.claude/instagram/swipe.md
+python3 scripts/swipe.py captured.tsv --out ~/.claude/instagram/swipe.md
 ```
 
 It computes the outlier multiple, names the hook formula using the same 26
-formulas `/ig-reel` writes from, scores each hook with `hookscore.py`, and
+formulas `/ig-reel` writes from, scores each hook with `ig-reel/scripts/hookscore.py`, and
 prints what separates the top third from the bottom third.
 
 ## Step 4: say what it means, carefully

@@ -11,15 +11,17 @@ description: >-
 
 # ig-reel
 
+Script and data paths below are relative to this skill's folder (the directory containing this SKILL.md). Resolve them against that folder, not the current working directory.
+
 Turns one raw idea into a Reel that somebody finishes.
 
 Two tools live in this folder and they both actually run. Use them. Do not
 eyeball the hook and do not guess at the length.
 
 ```bash
-python3 hookscore.py hooks.txt              # rank your hook options
-python3 hookscore.py --hook "one line"      # score a single one
-python3 beats.py script.txt --target 30     # timed beat sheet before you shoot
+python3 scripts/hookscore.py hooks.txt              # rank your hook options
+python3 scripts/hookscore.py --hook "one line"      # score a single one
+python3 scripts/beats.py script.txt --target 30     # timed beat sheet before you shoot
 ```
 
 ## Before you write
@@ -64,14 +66,14 @@ three formulas that genuinely fit it, and write the spoken line plus the
 on-screen line for each. Different formulas, not three rewrites of one.
 
 **2. Score them.** Put the three spoken lines in a file, one per line, and run
-`hookscore.py`. Show the user the ranking. If the top one is under 50, you do
+`scripts/hookscore.py`. Show the user the ranking. If the top one is under 50, you do
 not have the hook yet and no amount of editing fixes that.
 
 **3. Write the script** on the winning hook. Plain spoken language, the way the
 user actually talks. Contractions. Short lines. No sentence they would have to
 rehearse.
 
-**4. Time it.** Run `beats.py script.txt --target {length}`. Fix every flag:
+**4. Time it.** Run `scripts/beats.py script.txt --target {length}`. Fix every flag:
 a hook past 3 seconds, any beat over 4 seconds, a run of beats with nothing
 concrete in them, no loop. Re-run until it is clean.
 
@@ -119,7 +121,7 @@ Write it separately, every time. It is read before it is heard.
 - **Cut the intro.** No greeting, no "in this video", no name, no logo sting.
   The video starts at the sentence you would normally reach at second six.
 - **Change the frame every beat.** A static shot for 8 seconds is where people
-  leave, and `beats.py` will flag it.
+  leave, and `scripts/beats.py` will flag it.
 - **One ask at the end.** Comment a keyword, save it, or follow. One.
 - **Never fabricate.** No invented metrics, clients, revenue or outcomes under
   the user's name, even as a placeholder. If a number is needed and unknown,
