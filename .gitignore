@@ -2,3 +2,5 @@ __pycache__/
 *.pyc
 .DS_Store
 .taste-skill/
+claude-ai-export/*.zip
+claude-ai-export/skills/
